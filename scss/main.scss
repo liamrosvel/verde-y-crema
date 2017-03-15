@@ -4,6 +4,34 @@
 	box-sizing: border-box;
 }
 
+//Color Variables
+$color1: #3b444d;
+$color2: #E95A4F;
+
+//Font-family
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700');
+
+//Font-weight
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+//General Styles
+
+body {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
 img {
 	max-width: 100%;
 }
+
+//@import scss files
+
+@import "partials/header";
+@import "partials/main-nav";
+@import "partials/landing";
+@import "partials/menu";
+@import "partials/chef";
+@import "partials/about";
+@import "partials/footer";

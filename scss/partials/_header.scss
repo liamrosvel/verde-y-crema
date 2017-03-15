@@ -1,0 +1,34 @@
+.header {
+	background-color: #fff;
+	box-shadow: 0 1px 2px 1px rgba(#ccc, .3);
+	padding: 1.5em 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 600;
+	opacity: 1;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__icons-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo-container {
+		margin: 0;
+		padding: 0;
+	}
+	&__logo {
+		width: 14em;
+	}
+	//icon menu styles
+	&__icon-menu {
+		fill: $color1;
+		width: 2.5em;
+		cursor: pointer;
+	}
+}

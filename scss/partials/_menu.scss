@@ -1,0 +1,77 @@
+.menu {
+	margin-top: 32.9em;
+	padding: 3em 0;
+	background-color: #fff;
+	position: relative;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__item {
+		padding: 2em 0;
+		text-align: center;
+		margin-bottom: 22em;
+
+		@media screen and (min-width: 480px) {
+			margin-bottom: 27em;
+		}
+	}
+	&__item-icon-container {
+
+	}
+	&__item-icon {
+		fill: $color2;
+		width: 5em;
+	}
+	&__header {
+		padding: 1em 0;
+	}
+	&__title {
+		text-transform: uppercase;
+		color: $color1;
+	}
+	&__subtitle {
+		color: rgba(#ccc, .8);
+		font-style: italic;
+		margin-bottom: 0;
+	}
+	&__copy {
+		font-size: 1.2em;
+		font-weight: $light;
+		color: $color1;
+		line-height: 1.7;
+	}
+	&__button {
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 3.5;
+		padding: 0 4em;
+		font-size: 1.1em;
+		font-weight: $bold;
+		color: $color2;
+		border: 1.5px solid $color2;
+	}
+	&__line {
+		width: 2px;
+		height: 6em;
+		background-color: rgba(#ccc, .8);
+		margin: 0 auto 2em;
+	}
+	&__img-container {
+		margin: 0;
+		padding: 0;
+
+		@media screen and (max-width: 768px) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			line-height: 0;	
+		}
+	}
+	&__img {
+		
+	}
+}

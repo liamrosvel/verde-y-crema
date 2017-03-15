@@ -1,0 +1,55 @@
+.about {
+	padding: 3em 0;
+	background-color: $color2;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__item {
+		padding: 2em 0;
+		text-align: center;
+	}
+	&__icon-container {
+
+	}
+	&__icon {
+		fill: #fff;
+		width: 5em;
+	}
+	&__header {
+		padding: 1em 0;
+	}
+	&__title {
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__subtitle {
+		color: darken($color2, 16%);
+		font-style: italic;
+		margin-bottom: 0;
+	}
+	&__copy {
+		font-size: 1.2em;
+		font-weight: $light;
+		color: #fff;
+		line-height: 1.7;
+	}
+	&__line {
+		width: 2px;
+		height: 6em;
+		background-color: rgba(#ccc, .8);
+		margin: 0 auto 2em;
+	}
+	&__button {
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 3.5;
+		padding: 0 3em;
+		font-size: 1.1em;
+		font-weight: $bold;
+		color: #fff;
+		border: 1.5px solid #fff;
+	}
+}
