@@ -9,19 +9,19 @@ html(lang="es")
 		link(rel="stylesheet" href="./css/normalize.css")
 		link(rel="stylesheet" href="./css/main.css")
 	body
-		header.header
+		header.header#scroll-header
 			div.header__container
 				nav.main-nav#show-nav
 					ul.main-nav__list
 						li.main-nav__item: a.main-nav__link(href="#") nuestra comida
 						li.main-nav__item: a.main-nav__link(href="#") jair tellez
 						li.main-nav__item
-							a(href="#")
-								img.main-nav__item-img(src="./images/logo-white.svg" alt="verde-y-crema-logo")
+							a(href="/")
+								img.main-nav__item-img(src="./images/logo.svg" alt="verde-y-crema-logo")
 						li.main-nav__item: a.main-nav__link(href="#") verde y crema
 						li.main-nav__item: a.main-nav__link(href="#") contáctanos
 				div.header__icons-container
-					a(href="#")
+					a(href="/")
 						figure.header__logo-container
 							img.header__logo(src="./images/logo.svg" alt="verde-y-crema-logo")
 					svg.header__icon-menu#toggle-menu(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24")
@@ -41,7 +41,6 @@ html(lang="es")
 						h3.menu__subtitle Nuestro Concepto
 					p.menu__copy
 						|Restaurante Verde y Crema recrea el sabor de la cocina, el vivido color del arte urbano y el inconfundible sonido de Tijuana.
-					div.menu__line
 					a.menu__button(href="#") menu
 				figure.menu__img-container
 					img.menu__img(src="./images/saucer.png" alt="Nuestro-Menu")
@@ -56,7 +55,6 @@ html(lang="es")
 						h3.chef__subtitle Nuestro Chef
 					p.chef__copy
 						|Su trabajo en restaurante Laja, en Valle de Guadalupe y Merotoro, en Ciudad de México, le han valido el reconocimiento de la crítica especializada a nivel internacional.
-					div.chef__line
 					a.chef__button(href="#") conoce al artista
 				figure.chef__img-container
 					img.chef__img(src="./images/jair-tellez.jpg" alt="Jair-Tellez-foto")
@@ -71,7 +69,6 @@ html(lang="es")
 						h3.about__subtitle ¿Quiénes Somos?
 					p.about__copy
 						|Restaurante Verde y Crema es un proyecto basado en la confianza de sus socios y el compromiso por mantener los más altos estándares de calidad en productos y servicios.
-					div.about__line
 					a.about__button(href="#") nuestra historia
 		footer.footer
 			div.footer__container

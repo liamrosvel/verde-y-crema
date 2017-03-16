@@ -2,13 +2,34 @@
 	padding: 3em 0;
 	background-color: $color2;
 
+	@media screen and (min-width: 640px) {
+		padding: 4em 0;
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: 5em 0;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 87%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	&__item {
 		padding: 2em 0;
 		text-align: center;
+
+		@media screen and (min-width: 1024px) {
+			width: 70%;
+			margin: 0 auto;
+		}
 	}
 	&__icon-container {
 
@@ -16,6 +37,10 @@
 	&__icon {
 		fill: #fff;
 		width: 5em;
+
+		@media screen and (min-width: 1024px) {
+			width: 4em;
+		}
 	}
 	&__header {
 		padding: 1em 0;
@@ -23,6 +48,10 @@
 	&__title {
 		text-transform: uppercase;
 		color: #fff;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.3em;
+		}
 	}
 	&__subtitle {
 		color: darken($color2, 16%);
@@ -34,12 +63,11 @@
 		font-weight: $light;
 		color: #fff;
 		line-height: 1.7;
-	}
-	&__line {
-		width: 2px;
-		height: 6em;
-		background-color: rgba(#ccc, .8);
-		margin: 0 auto 2em;
+		margin-bottom: 5.5em;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.1em;
+		}
 	}
 	&__button {
 		text-decoration: none;
@@ -51,5 +79,25 @@
 		font-weight: $bold;
 		color: #fff;
 		border: 1.5px solid #fff;
+		position: relative;
+		&:before {
+			content: " ";
+			width: 2px ;
+			height: 4em;
+			background-color: #fff;
+			position: absolute;
+			top: -5em;
+			left: 50%;
+			transition: all 350ms ease-in;
+		}
+
+		&:hover:before {
+			top: -3.3em;
+		}
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1em;
+			line-height: 3;
+		}
 	}
 }
